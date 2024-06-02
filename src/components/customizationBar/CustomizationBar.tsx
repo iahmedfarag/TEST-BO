@@ -6,6 +6,7 @@ import Logo from '@components/common/logo/Logo';
 import Color from '@components/common/color/Color';
 import UserStatus from '@components/common/user/UserStatus';
 import Font from "@components/common/font/Font";
+import { IoMdClose } from "react-icons/io";
 
 export default function CustomizationBar() {
     const { backgroundDefaultColors, colorDefaultColors, btnBackgroundDefaultColors, customizationSidebar, theme: { color, background, btnBackground, textSize, textChatBoxSize } } = useAppSelector((state) => state.general)
@@ -20,7 +21,7 @@ export default function CustomizationBar() {
     return (
         <Wrapper style={customizationBarStyle.style}>
             <Logo />
-
+            <button className="close"><IoMdClose /></button>
             <div className="colors">
                 <Color defaultArr={backgroundDefaultColors} color={background} prop='background' name='background' />
                 <Color defaultArr={colorDefaultColors} color={color} prop='color' name='Text' />

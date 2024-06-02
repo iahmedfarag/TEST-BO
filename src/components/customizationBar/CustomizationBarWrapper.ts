@@ -14,7 +14,8 @@ export const Wrapper = styled.aside`
     display: flex;
     flex-direction: column;
     white-space: nowrap; // wrap
-    /* overflow-y: scroll; // */
+    overflow-y: scroll; //
+    overflow-x: hidden;
     gap: 20px;
     .colors {
         display: flex;
