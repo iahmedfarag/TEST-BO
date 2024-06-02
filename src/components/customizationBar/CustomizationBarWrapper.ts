@@ -16,11 +16,22 @@ export const Wrapper = styled.aside`
     white-space: nowrap; // wrap
     overflow-y: scroll; //
     overflow-x: hidden;
-    gap: 20px;
+    .close {
+        position: relative;
+        z-index: 5;
+        button {
+            position: absolute;
+            top: 20px;
+            right: -5px;
+            color: var(--main-color);
+            font-size: 24px;
+        }
+    }
     .colors {
         display: flex;
         flex-direction: column;
         gap: 20px;
+        margin: 20px 0;
     }
     .size {
         display: flex;
@@ -29,12 +40,11 @@ export const Wrapper = styled.aside`
         h3 {
             margin-bottom: 5px;
         }
-
-
-        
+        margin-bottom: 10px;
     }
 
-    .reset,.update {
+    .reset, .update {
+        margin: 5px 0;
         button {
             width: 100%;
             padding: 10px;
@@ -50,7 +60,9 @@ export const Wrapper = styled.aside`
             }
         }
     }
-
+    .tip {
+        margin: 10px 0;
+    }
     .user {
         margin-top: auto;
         display: flex;

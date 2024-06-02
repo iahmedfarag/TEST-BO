@@ -20,8 +20,10 @@ export default function CustomizationBar() {
 
     return (
         <Wrapper style={customizationBarStyle.style}>
+            <div className="close">
+                <button onClick={() => { dispatch(toggleCustomizationSidebar()) }}><IoMdClose /></button>
+            </div>
             <Logo />
-            <button className="close"><IoMdClose /></button>
             <div className="colors">
                 <Color defaultArr={backgroundDefaultColors} color={background} prop='background' name='background' />
                 <Color defaultArr={colorDefaultColors} color={color} prop='color' name='Text' />
