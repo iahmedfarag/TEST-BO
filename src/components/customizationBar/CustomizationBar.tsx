@@ -1,6 +1,6 @@
 import { Wrapper } from "./CustomizationBarWrapper";
 import { useAppDispatch, useAppSelector } from '@store/hooks';
-import { resetTheme } from '@store/generalSlice';
+import { resetTheme, toggleCustomizationSidebar } from '@store/generalSlice';
 import { BiSolidCommentEdit } from 'react-icons/bi';
 import Logo from '@components/common/logo/Logo';
 import Color from '@components/common/color/Color';
